@@ -1,6 +1,6 @@
 public class Lexicographical_Numbers {
     public static void main(String[] args) {
-        int n = 1000;
+        int n = 100;
         ans(0,n);
     }
     public static void ans(int curr ,int n){
