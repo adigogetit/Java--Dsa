@@ -1,14 +1,14 @@
 public class dice {
     public static void main(String[] args) {
         int n = 4;
-        // dice(n,0,"");
+        dice(n,0,"");
 
         // dice1(n,0,"");
 
         // dice2(n,0,"");
         // System.out.println("\n"+count);
 
-        System.out.println("\n" + dice3(n,0,""));
+        // System.out.println("\n" + dice3(n,0,""));
     }
     
     // using recursive calls
@@ -32,7 +32,7 @@ public class dice {
         }
         if(curr > n)return;
 
-        for(int d=1; d<=3; d++){
+        for(int d=1; d<n; d++){
             dice(n ,curr+d ,ans+d);
         }
     }

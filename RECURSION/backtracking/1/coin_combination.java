@@ -1,7 +1,7 @@
 public class coin_combination {
     public static void main(String[] args) {
-        int[] coins = { 2, 3, 6, 7 };
-        int target = 7;
+        int[] coins = { 2, 3, 5 };
+        int target = 8;
         coinP(coins, target, "" , 0);
     }
 
@@ -12,6 +12,7 @@ public class coin_combination {
             return;
         }
 
+        
         for (int i = idx; i < coins.length; i++) {
             if (coins[i] <= target) {
                 coinP(coins, target-coins[i], ans+coins[i] , i) ;

@@ -7,7 +7,7 @@ public class coin_permutation {
 
     // no bactracking in this question
     static void coinP(int[] coins, int target, String ans) {
-        if (target == 0) {
+        if(target == 0) {
             System.out.println(ans);
             return;
         }
