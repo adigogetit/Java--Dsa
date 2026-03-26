@@ -1,7 +1,11 @@
-public class student {
-    int age;
-    String name; 
-    public static void main(String[] args) {
-        
+class Student {
+    private int age;   // hidden
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return this.age;
     }
 }

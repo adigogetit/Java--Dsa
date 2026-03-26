@@ -1,7 +1,7 @@
 public class coin_combination {
     public static void main(String[] args) {
-        int[] coins = { 2, 3, 5 };
-        int target = 8;
+        int[] coins = { 1,2,3 };
+        int target = 3;
         coinP(coins, target, "" , 0);
     }
 
