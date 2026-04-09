@@ -12,7 +12,8 @@ public class inbuilt {
         System.out.println(st.pop());
         System.out.println(st);
         System.out.println(st.peek());
-        System.out.println(st);
+        System.out.println(st);.
+        
 
         // print use foreach loop
         for (int x : st) {
