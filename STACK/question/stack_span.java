@@ -15,7 +15,6 @@ public class stack_span {
             while(!s.empty() && stack[i] >= stack[s.peek()]){
                 s.pop();
             }
-
             if(s.empty()){
                 span[i]=i+1;
             }else{
