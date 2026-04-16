@@ -13,7 +13,7 @@ class CircularQueue {
         size = 0;
     }
 
-    // Enqueue
+    // Enqueue (add)
     public void enqueue(int x) {
         if (size == capacity) {
             System.out.println("Queue is Full");
@@ -24,7 +24,7 @@ class CircularQueue {
         size++;
     }
 
-    // Dequeue
+    // Dequeue (remove)
     public int dequeue() {
         if (size == 0) {
             System.out.println("Queue is Empty");
@@ -36,9 +36,9 @@ class CircularQueue {
         return val;
     }
 
-    // Peek
+    // Peek (see)
     public int peek() {
-        if (size == 0) return -1;
+        if (size == 0)return -1;
         return arr[front];
     }
 
@@ -50,17 +50,15 @@ class CircularQueue {
         }
 
         int i = front;
-        int count = 0;
 
-        while (count < size) {
+        for (int count = 0; count < size; count++) {
             System.out.print(arr[i] + " ");
             i = (i + 1) % capacity;
-            count++;
         }
+
         System.out.println();
     }
 }
-
 
 // 👇 Driver class (same pattern as before)
 public class Circular_Queue_using_array {
