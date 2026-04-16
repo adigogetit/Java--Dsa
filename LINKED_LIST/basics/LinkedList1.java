@@ -20,12 +20,15 @@ public class LinkedList1 {
         Node newNode = new Node(data);
         size++;
 
+        // if no data is there
         if (head == null) {
             head = tail = newNode;
             return;
         }
 
+        // head ko ek step picha kar diya and newNode sabse aage aa gaya 
         newNode.next = head;
+        // sabse aage wale ko  head bana diya 
         head = newNode;
     }
 
@@ -39,7 +42,9 @@ public class LinkedList1 {
             return;
         }
 
+        // tail ke next ko new node bana diya and newNOde sabse picha hoo gaya 
         tail.next = newNode;
+        // sabse picha jo abhi newnode bana hai uske tail bana do 
         tail = newNode;
     }
  
