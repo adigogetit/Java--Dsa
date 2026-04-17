@@ -11,7 +11,6 @@ class Node {
 class QueueLL {
     Node front;
     Node rear;
-
     // add
     public void enqueue(int x) {
         Node newNode = new Node(x);
