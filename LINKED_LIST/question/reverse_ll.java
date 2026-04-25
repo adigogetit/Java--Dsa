@@ -54,6 +54,21 @@ public class reverse_ll {
         head = prev;
     }
 
+    public void reverseRecursive() {
+        tail = head;
+        head = reverseRecursiveHelper(head);
+    }
+
+    private Node reverseRecursiveHelper(Node head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        Node newHead = reverseRecursiveHelper(head.next);
+        
+        head.next.next = head;
+        head.next = null;
+        return newHead;
+    }
 
     public static void main(String[] args) {
         reverse_ll list = new reverse_ll();
@@ -70,7 +85,6 @@ public class reverse_ll {
         list.reverseIterative();
         System.out.println("After iterative reverse:");
         list.printList();
-
 
     }
 }
