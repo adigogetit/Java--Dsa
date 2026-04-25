@@ -1,5 +1,3 @@
-package questions;
-
 public class reverse_ll {
     public static class Node {
         public int data;
@@ -64,7 +62,7 @@ public class reverse_ll {
             return head;
         }
         Node newHead = reverseRecursiveHelper(head.next);
-        
+
         head.next.next = head;
         head.next = null;
         return newHead;
@@ -84,6 +82,10 @@ public class reverse_ll {
 
         list.reverseIterative();
         System.out.println("After iterative reverse:");
+        list.printList();
+
+        list.reverseRecursive();
+        System.out.println("After recursive reverse:");
         list.printList();
 
     }
