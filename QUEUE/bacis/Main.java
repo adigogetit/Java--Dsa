@@ -106,6 +106,7 @@ class Deque {
 public class Main {
     public static void main(String[] args) {
 
+        // here we are not using java's built in Deque, we are creating our own Deque class and using it here
         Deque dq = new Deque(5);
 
         dq.insertRear(10);
