@@ -102,8 +102,8 @@ class Deque {
 }
 
 
-// 👇 MAIN CLASS (IMPORTANT)
-public class Main {
+// 👇 MAIN CLASS
+public class deque {
     public static void main(String[] args) {
 
         // here we are not using java's built in Deque, we are creating our own Deque class and using it here
