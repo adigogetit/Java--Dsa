@@ -6,5 +6,6 @@ public class time {
         }
         long l = System.currentTimeMillis();
         System.out.println(l-s);
+        
     }
 }
