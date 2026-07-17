@@ -21,7 +21,16 @@ public class height_sum_count {
         return Math.max(left,right)+1;
     }
     
+    public static int count(Node root){
+        if(root == null)return 0;
+        
+        int left = count(root.left);
+        int right = count(root.right);
     
+        return left + right + 1;
+    }
+
+
 
     public static void main(String[] args) {
 
