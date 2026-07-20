@@ -40,6 +40,37 @@ public class diameter_subtree {
         return Math.max(Math.max(leftd, rightd), selfdia1);
     }
     
+    // Diameter 2 -- create an Info class that stores both the diameter and height
+    // of each subtree. This allows us to calculate the height and diameter together
+    // in a single traversal, avoiding repeated height calculations.
+    // Time Complexity: O(n)
+    static class Info {
+        int dia;
+        int ht;
+
+        // constructer
+        public Info(int dia, int ht) {
+            this.dia = dia;
+            this.ht = ht;
+        }
+    }
+
+    public static Info dia2(Node root) {
+        if (root == null) {
+            return new Info(0, 0);
+        }
+
+        Info leftInfo = dia2(root.left);
+        Info rightInfo = dia2(root.right);
+
+        int selfdia = leftInfo.ht + rightInfo.ht + 1;
+
+        int dia = Math.max(Math.max(leftInfo.dia, rightInfo.dia), selfdia);
+        int ht = Math.max(leftInfo.ht, rightInfo.ht) + 1;
+
+        return new Info(dia, ht);
+    }
+
 
 
     public static void main(String[] args) {
