@@ -30,7 +30,14 @@ public class height_sum_count {
         return left + right + 1;
     }
 
-
+    public static int sum(Node root){
+        if(root == null)return 0;
+        
+        int left = count(root.left);
+        int right = count(root.right);
+    
+        return left + right + root.data;
+    }
 
     public static void main(String[] args) {
 
