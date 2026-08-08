@@ -115,7 +115,5 @@ public class order_Traversal {
         // level order
         System.out.println("Level Order ");
         tree.levelorder(root);
-
-
     }
 }
