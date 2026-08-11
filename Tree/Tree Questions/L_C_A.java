@@ -51,7 +51,7 @@ public class L_C_A {
         return lca;
     }
 
-    // way-2
+    // way-2 
     public static Node lca2(Node root,int n1,int n2){
         if(root == null)return null;
 
